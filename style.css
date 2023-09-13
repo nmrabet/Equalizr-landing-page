@@ -1,0 +1,23 @@
+:root {
+  --clr-green: #66e2dc;
+  --clr-orange: #fa7453;
+  --clr-yellow: #ffb964;
+  --clr-whitish: #fcfaf9;
+  --clr-black: #191826;
+
+  --fw-bold: 700;
+  --fs-small: 1rem;
+  --fs-medium: 1.25rem;
+  --fs-large: 2.5rem;
+  --fs-xlarge: 5.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
