@@ -8,6 +8,7 @@
   --fw-bold: 700;
   --fs-small: 1rem;
   --fs-medium: 1.25rem;
+  --fs-xmedium: 2rem;
   --fs-large: 2.5rem;
   --fs-xlarge: 4rem;
   --fs-xxlarge: 5.5rem;
@@ -27,12 +28,11 @@ body {
 .header {
   background: url(./assets/bg-main-mobile.png) no-repeat;
   background-position: 50px -250px;
-  min-height: 700px;
-  padding: 0 2em;
+  padding: 2em;
 }
 
 .logo {
-  margin: 2em 0;
+  margin: 2em 0 0 0;
 }
 
 .header__heading {
@@ -43,6 +43,71 @@ body {
 .header__text {
   line-height: 1.65;
   font-size: var(--fs-small);
+}
+
+.card-container {
+  background-color: var(--clr-orange);
+  color: #fff;
+  padding: 2.5em 2em;
+  border-radius: 8px;
+}
+
+.card--title {
+  font-size: var(--fs-xmedium);
+}
+
+.card--text {
+  font-size: var(--fs-small);
+  line-height: 1.7;
+}
+
+.big {
+  font-size: var(--fs-xlarge);
+  font-weight: var(--fw-bold);
+}
+
+.vertical-center {
+  vertical-align: middle;
+  padding-right: 0.25em;
+}
+
+.ios-btn,
+.android-btn {
+  min-width: 296px;
+  margin-top: 1em;
+  padding: 1em 4em;
+  border-radius: 8px;
+  border: none;
+  font-weight: var(--fw-bold);
+}
+
+.ios-btn {
+  color: #fff;
+  background-color: var(--clr-black);
+}
+
+.android-btn {
+  background-color: var(--clr-whitish);
+}
+
+.footer-content {
+  margin: 3em 2em;
+}
+
+.footer-content > * {
+  margin-bottom: 1em;
+}
+
+.social-media {
+  margin: 3em 0;
+}
+
+.social-media > * {
+  padding-right: 1em;
+}
+
+.email {
+  font-weight: var(--fw-bold);
 }
 
 /* Media queries */
@@ -65,4 +130,3 @@ body {
     font-size: var(--fs-medium);
   }
 }
-
