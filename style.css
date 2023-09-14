@@ -54,6 +54,7 @@ body {
 
 .card--title {
   font-size: var(--fs-xmedium);
+  margin: 0;
 }
 
 .card--text {
@@ -79,11 +80,22 @@ body {
   border-radius: 8px;
   border: none;
   font-weight: var(--fw-bold);
+  cursor: pointer;
 }
 
 .ios-btn {
   color: #fff;
   background-color: var(--clr-black);
+}
+
+.ios-btn:hover,
+.ios-btn:focus {
+  background-color: var(--clr-green);
+}
+
+.android-btn:hover,
+.android-btn:focus {
+  background-color: var(--clr-yellow);
 }
 
 .android-btn {
@@ -102,8 +114,13 @@ body {
   margin: 3em 0;
 }
 
-.social-media > * {
+.social-btn {
   padding-right: 1em;
+  cursor: pointer;
+}
+
+.social-btn:hover {
+  fill: var(--clr-orange);
 }
 
 .email {
