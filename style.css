@@ -45,12 +45,22 @@ body {
   font-size: var(--fs-small);
 }
 
+main {
+  background: url(./assets/bg-pattern-2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #191826;
+  padding: 2.5em;
+}
+
 .card-container {
   background-color: var(--clr-orange);
   color: #fff;
   padding: 2.5em 2em;
   border-radius: 8px;
 }
+
+
 
 .card--title {
   font-size: var(--fs-xmedium);
