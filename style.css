@@ -30,6 +30,13 @@ body {
   background-repeat: no-repeat;
   background-position: 50px -250px;
   padding: 2em;
+  margin-bottom: 8em;
+}
+
+.header-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -44,16 +51,16 @@ body {
 .header__text {
   line-height: 1.65;
   font-size: var(--fs-small);
+  max-width: 800px;
 }
 
 .bg-pattern {
-  margin-top: 8em;
   background-image: url(./assets/bg-pattern-2.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-color: #191826;
   border-radius: 10px;
-  padding-bottom: 8em;
+  padding-bottom: 15em;
 }
 
 .bg-pattern::after {
@@ -65,6 +72,7 @@ body {
   margin-top: -100px;
   left: 50%;
   transform: translateX(-50%);
+
   /*size of your image*/
   height: 430px;
   width: 209px;
@@ -86,7 +94,6 @@ body {
 .card--text {
   font-size: var(--fs-small);
   line-height: 1.7;
-  max-width: 320px;
 }
 
 .big {
@@ -154,6 +161,18 @@ body {
   font-weight: var(--fw-bold);
 }
 
+.footer-content {
+  max-width: 1400px;
+  margin-top: 6em;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.footer-text {
+  max-width: 400px;
+}
+
 /* Media queries */
 
 @media screen and (min-width: 768px) {
@@ -168,6 +187,7 @@ body {
   .header__heading {
     font-size: var(--fs-xlarge);
     margin: 1em 0 0 0;
+    max-width: 600px;
   }
 
   .header__text {
@@ -177,7 +197,68 @@ body {
   .header {
     background: url(./assets/bg-main-tablet.png);
     background-repeat: no-repeat;
-    background-position: -250px -150px;
+    background-position: -100px -120px;
     background-size: cover;
+    padding: 4em 2em;
   }
+
+  .bg-pattern {
+    margin: 8em auto;
+    max-width: 1400px;
+  }
+
+  .bg-pattern::after {
+    content: "";
+    background-image: url(./assets/illustration-app.png);
+    background-size: 100% 100%;
+    display: inline-block;
+    position: relative;
+    margin-top: -100px;
+    left: 30%;
+    transform: translateX(-50%);
+  
+    /*size of your image*/
+    height: 430px;
+    width: 209px;
+  }
+
+  .card-container {
+    background-color: var(--clr-orange);
+    color: #fff;
+    margin-top: -29em;
+    left: 60%;
+    transform: translateX(-50%);    padding: 3em 2em;
+    border-radius: 10px;
+    max-width: 380px;
+    position: relative;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    background: url(./assets/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .header__heading {
+    max-width: 650px;
+  }
+
+  .card-container {
+    background-color: var(--clr-orange);
+    color: #fff;
+    position: relative;
+    margin-top: -29em;
+    padding: 3em 2em;
+    border-radius: 10px;
+    max-width: 380px;
+    position: relative;
+  }
+
 }
