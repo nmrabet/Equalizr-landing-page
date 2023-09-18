@@ -218,8 +218,8 @@ body {
     transform: translateX(-50%);
   
     /*size of your image*/
-    height: 430px;
-    width: 209px;
+    height: 556px;
+    width: 271px;
   }
 
   .card-container {
@@ -259,6 +259,21 @@ body {
     border-radius: 10px;
     max-width: 380px;
     position: relative;
+  }
+
+  .bg-pattern::after {
+    content: "";
+    background-image: url(./assets/illustration-app.png);
+    background-size: 100% 100%;
+    display: inline-block;
+    position: relative;
+    margin-top: -100px;
+    left: 30%;
+    transform: translateX(-50%);
+  
+    /*size of your image*/
+    height: 642px;
+    width: 312px;
   }
 
 }
