@@ -26,7 +26,8 @@ body {
 }
 
 .header {
-  background: url(./assets/bg-main-mobile.png) no-repeat;
+  background: url(./assets/bg-main-mobile.png);
+  background-repeat: no-repeat;
   background-position: 50px -250px;
   padding: 2em;
 }
@@ -45,22 +46,37 @@ body {
   font-size: var(--fs-small);
 }
 
-main {
-  background: url(./assets/bg-pattern-2.svg);
-  background-position: center;
+.bg-pattern {
+  margin-top: 8em;
+  background-image: url(./assets/bg-pattern-2.svg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-color: #191826;
-  padding: 2.5em;
+  border-radius: 10px;
+  padding-bottom: 8em;
+}
+
+.bg-pattern::after {
+  content: "";
+  background-image: url(./assets/illustration-app.png);
+  background-size: 100% 100%;
+  display: inline-block;
+  position: relative;
+  margin-top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  /*size of your image*/
+  height: 430px;
+  width: 209px;
 }
 
 .card-container {
   background-color: var(--clr-orange);
   color: #fff;
-  padding: 2.5em 2em;
-  border-radius: 8px;
+  margin-top: -4em;
+  padding: 3em 2em;
+  border-radius: 10px;
 }
-
-
 
 .card--title {
   font-size: var(--fs-xmedium);
@@ -70,6 +86,7 @@ main {
 .card--text {
   font-size: var(--fs-small);
   line-height: 1.7;
+  max-width: 320px;
 }
 
 .big {
@@ -84,7 +101,7 @@ main {
 
 .ios-btn,
 .android-btn {
-  min-width: 296px;
+  width: 100%;
   margin-top: 1em;
   padding: 1em 4em;
   border-radius: 8px;
@@ -155,5 +172,12 @@ main {
 
   .header__text {
     font-size: var(--fs-medium);
+  }
+
+  .header {
+    background: url(./assets/bg-main-tablet.png);
+    background-repeat: no-repeat;
+    background-position: -250px -150px;
+    background-size: cover;
   }
 }
